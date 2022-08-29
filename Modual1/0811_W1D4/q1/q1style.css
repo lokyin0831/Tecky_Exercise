@@ -1,0 +1,188 @@
+.selectDifficulty {
+    width: 180px;
+    height: 25px;
+}
+
+.difficulty-and-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+body {
+    width: 825px;
+    margin: 0;
+    border: solid 1px rgb(232 233 235);
+    border-radius: 13px;
+}
+
+.share {
+    color: rgb(57 124 235);
+    font-size: 22px;
+}
+
+.cross-and-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-normal-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 210px;
+    height: 30px;
+    border: solid 2px rgb(221 221 221);
+    margin: 3px;
+    border-radius: 8px;
+}
+
+.right-normal-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 210px;
+    height: 30px;
+    border: solid 2px rgb(221 221 221);
+    margin: 3px;
+    border-radius: 8px;
+}
+
+.your-turn {
+    border: solid 2px rgb(0 180 162);
+}
+
+.cross {
+    font-size: 45px;
+}
+
+.circle {
+    font-size: 25px;
+}
+
+.little-circle {
+    font-size: 15px;
+}
+
+.little-cross {
+    font-size: 25px;
+}
+
+.whos-turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.turn-color {
+    color: rgb(138 148 155);
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.play-area {
+    height: 300px;
+    background-color: rgb(0 180 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-text {
+    display: flex;
+    color: rgb(0 180 162);
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+    border: 0;
+    font-size: 18px;
+}
+
+.restart-text:hover {
+    cursor: pointer;
+    color: rgb(6, 213, 192)
+}
+
+.container {
+    width: 246px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(0 180 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px rgb(0 150 135);
+    font-size: 28px;
+}
+
+#box1 {
+    border-top: 0;
+    border-left: 0;
+}
+
+#box2 {
+    border-top: 0;
+}
+
+#box3 {
+    border-top: 0;
+    border-right: 0;
+}
+
+#box4 {
+    border-left: 0;
+}
+
+#box6 {
+    border-right: 0;
+}
+
+#box7 {
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#box8 {
+    border-bottom: 0;
+}
+
+#box9 {
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.big-cross {
+    font-size: 100px;
+}
+
+.big-circle {
+    font-size: 52px;
+    color: white;
+}
+
+.tie {
+    color: black;
+    font-size: 28px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

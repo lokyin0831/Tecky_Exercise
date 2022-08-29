@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="q1style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css
+    ">
+</head>
+<body>
+    <div class="difficulty-and-share">
+        <select class="selectDifficulty">
+            <option>-Please select a difficulty-</option>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+            <option>Battle with friends</option>
+        </select>
+        <i class="bi bi-share-fill share"></i>
+    </div>
+    <div class="cross-and-circle">
+        <div class="left-normal-box your-turn">
+            <i class="bi bi-x cross"></i>
+            <div class="cross-score">-</div>
+        </div>
+        <div class="right-normal-box">
+            <i class="bi bi-circle circle"></i>
+            <div class="circle-score">-</div>
+        </div>
+    </div>
+    <div class="whos-turn">
+        <i class="turn bi bi-x little-cross"></i>
+        <div class="turn-color">Turn</div>
+    </div>
+    <div class="play-area">
+        <div class="area3x3">
+            <div class="container">
+                <div class="box" id="box1"></div>
+                <div class="box" id="box2"></div>
+                <div class="box" id="box3"></div>
+                <div class="box" id="box4"></div>
+                <div class="box" id="box5"></div>
+                <div class="box" id="box6"></div>
+                <div class="box" id="box7"></div>
+                <div class="box" id="box8"></div>
+                <div class="box" id="box9"></div>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <button class="restart-text">RESTART GAME</button>
+    </div>
+    <script type='text/javascript' src="q1.js" ></script>
+</body>
+</html>

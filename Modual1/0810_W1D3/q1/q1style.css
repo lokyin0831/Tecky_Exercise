@@ -1,0 +1,25 @@
+.container {
+    width: 261px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(212 229 250);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(94 131 181);
+    font-size: 28px;
+}
+
+.end-text {
+    font-family: "Abril Fatface", cursive;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 4px;
+}

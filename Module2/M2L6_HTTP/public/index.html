@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Memo Wall</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="background-color">
+
+
+        <div class="admin-container">
+            <div class="input-memo">
+                <form class="input-group" id="login-form" method="POST" action="/index">
+                    <input class="input-size-control" type="text" name="memoText">
+                    <input type='file' name='profile' />
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="container-under-input-memo">
+
+                <div class="text-allign">連儂牆管理員專用</div>
+                <form>
+                    <div class="mb-3">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="btn buttonWidth1 btn-dark">Submit</button>
+                        <button type="button" class="btn buttonWidth2 btn-light">Login via Google</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="memoContainer">
+            <div class="memos" id="source">
+                <div class="white-background-top">
+                    <i class="bi bi-trash-fill"></i>
+                </div>
+                <div class="white-background-bottom">
+                    <i class='fas fa-edit'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src="script.js"></script>
+</body>
+
+</html>

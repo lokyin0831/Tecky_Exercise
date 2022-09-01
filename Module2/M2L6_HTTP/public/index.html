@@ -23,34 +23,30 @@
 
         <div class="admin-container">
             <div class="input-memo">
-                <form class="input-group" id="login-form" method="POST" action="/index">
+                <form class="input-group" id="login-form" method="POST">
+                    <!-- action="/index" -->
                     <input class="input-size-control" type="text" name="memoText">
-                    <input type='file' name='profile' />
-                    <input type="submit" value="Submit">
+                    <!-- <input type='file' name='profile' /> -->
+                    <input id="submit-button" type="submit" value="Submit">
                 </form>
             </div>
             <div class="container-under-input-memo">
 
                 <div class="text-allign">連儂牆管理員專用</div>
-                <form>
+                <form id="login-form" method="POST" action="/adminLogin">
                     <div class="mb-3">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1" name="username">
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Username"
+                            aria-describedby="basic-addon1" name="password">
+                        <div class="button-container">
+                            <button type="submit" class="btn buttonWidth1 btn-dark">Submit</button>
+                            <button type="button" class="btn buttonWidth2 btn-light">Login via Google</button>
                         </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Password" aria-label="Username"
-                                aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                    <div class="button-container">
-                        <button type="submit" class="btn buttonWidth1 btn-dark">Submit</button>
-                        <button type="button" class="btn buttonWidth2 btn-light">Login via Google</button>
                     </div>
                 </form>
+
+
             </div>
         </div>
 

@@ -25,18 +25,22 @@ document.querySelector(".input-group")
 		e.preventDefault()
 		const form = e.target
 		const content = form.memoText.value //this is a text
+		const file = form.profile.files[0]
+
+		console.log(content, file)
 
 		const formData = new FormData()
 		formData.append("text", content)
+		formData.append("image", file)
 
 		const res = await fetch('/index', {
 			method: "POST",
 			body: formData
 		})
 
-		if (res.status === 200) {
-			window.location = '/admin.html'
-		}
+		// if (res.status === 200) {
+		// 	window.location = '/admin.html'
+		// }
 		console.log(res)
 
 	})

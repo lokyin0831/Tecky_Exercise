@@ -7,6 +7,7 @@ import fs from 'fs';
 import formidable, { Files } from 'formidable'
 import path from 'path';
 import jsonfile from 'jsonfile';
+import { formParse, uploadDir } from './upload';
 
 const app = express();
 
@@ -30,20 +31,25 @@ app.post('/adminLogin', (req, res) => {
 
 app.post('/index', async (req, res) => {
     try {
-        const content = req.body.memoText
+        const obj: any = await formParse(req)
         const memos = await jsonfile.readFile(path.join(__dirname, '/public/memos.json'));
         memos.push({ 
-            memoText: content
+            memoText: obj['text'],
+            filename: obj['filename']
         })
         await jsonfile.writeFile(path.join(__dirname, '/public/memos.json'),memos, {spaces:2})
-
-        console.log(memos);
+        res.status(200).send("Upload successful")
+        return
 
 
     } catch (err) {
-        console.error(err);
+        res.status(400).send("Upload Fail")
+        return
     }
 })
+
+// Auto create a folder
+fs.mkdirSync(uploadDir, { recursive: true })
 
 app.use(express.static('public'))
 

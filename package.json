@@ -1,0 +1,24 @@
+{
+  "name": "m2l4_review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/formidable": "^2.0.5",
+    "@types/node": "^18.7.13",
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "prettier": "2.7.1"
+  }
+}

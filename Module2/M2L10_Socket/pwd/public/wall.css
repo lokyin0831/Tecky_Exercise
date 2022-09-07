@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./wall.jpeg");
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    background-color: #871412;
+    height: 500px;
+    width: 200px;
+    padding-top: 10px;
+}
+
+.memo-container {
+    position: relative;
+    background-color: #f5e47a;
+    height: 150px;
+    width: 150px;
+    box-shadow: 10px 10px 5px #220505;
+    margin-left: 25px;
+}
+
+.delete-btn {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-btn {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memo-container > input {
+    margin-left: 5px;
+    border: none;
+    background-color: #f5e47a;
+}
+.input-file {
+    margin-top: 10px;
+}
+
+.login-container {
+    text-align: center;
+}
+h1 {
+    color: #ff0002;
+}
+.memo-submit {
+    text-align: center;
+}
